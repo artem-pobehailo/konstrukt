@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&family=Tourney:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Konstrukt</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-left">
+        <p class="header-text">ENG</p>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-item" href=".">DOCUMENTATION</a>
+            </li>
+            <li class="separator">/</li>
+            <li class="header-item">
+              <a class="header-item" href=".">WHO'S USING</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <a href="." class="header-logo">
+        <svg class="" width="237" height="54">
+          <use href="./company-logo-black.svg"></use>
+        </svg>
+      </a>
+    </header>
+
+    <section class="introduction container">
+      <div class="introduction-main">
+        <h2 class="introduction-titel">Introduction</h2>
+        <p class="introduction-subtitle">Chapter 1</p>
+      </div>
+      <p class="introduction-text">
+        Welcome to the very start of your React Native journey! If you're
+        looking for environment setup instructions, they've moved to
+        <span class="introduction-span"><a href=".">their own section</a></span
+        >. Continue reading for an introduction to the documentation, Native
+        Components, React, and more!
+      </p>
+    </section>
+
+    <section class="components container">
+      <div class="introduction-main">
+        <h2 class="introduction-titel">core components</h2>
+        <p class="introduction-subtitle">Chapter 2</p>
+      </div>
+      <p class="introduction-text">
+        React Native is an open source framework for building Android and iOS
+        applications using React and the app platform’s native capabiles. With
+        React Native, you use JavaScript to access your platform’s APIs as well
+        as to describe the appearance and behavior of your UI using React
+        components:
+        <span class="components-span">bundles of reusable, nestable code</span>.
+        You can learn more about React in the next section. But first, let’s
+        cover how components work in React Native.
+      </p>
+    </section>
+
+    <section class="fundamentals container">
+      <div class="introduction-main">
+        <h2 class="introduction-titel">react fundamentals</h2>
+        <p class="introduction-subtitle">Chapter 3</p>
+      </div>
+
+      <p class="introduction-text">
+        React Native runs on
+        <span class="introduction-span"
+          ><a href="https://reactnative.dev/" target="_blank">React</a></span
+        >, a popular open source library for building user interfaces with
+        JavaScript. To make the most of React Native, it helps to understand
+        React itself. This section can get you started or can serve as a
+        refresher course.
+      </p>
+
+      <h3 class="introduction-text subtitle">
+        We’re going to cover the core concepts behind React:
+      </h3>
+
+      <ul class="fundamentals-list">
+        <li class="introduction-item">
+          <p class="introduction-text">
+            <span class="fundamentals-span">+ components.</span> The rest of
+            this introduction to React uses cats in its examples: friendly,
+            approachable creatures that need names and a cafe to work in.
+          </p>
+        </li>
+        <li class="introduction-item">
+          <p class="introduction-text">
+            <span class="fundamentals-span">+ JSX</span>. React and React Native
+            use JSX, a syntax that lets you write elements inside JavaScript
+            like so:
+            <span class="fundamentals-bg"
+              ><code>&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</code></span
+            >.
+          </p>
+        </li>
+      </ul>
+
+      <h3 class="introduction-text subtitle">
+        The React docs have
+        <span class="introduction-span"
+          ><a
+            href="https://legacy.reactjs.org/docs/jsx-in-depth.html"
+            target="_blank"
+            >a comprehensive guide to JSX</a
+          ></span
+        >
+        you can refer to learn even more. Because JSX is JavaScript, you can use
+        variables inside it. Here you are declaring a
+        <span class="fundamentals-bg">name</span> for the cat, name, and
+        embedding it with curly braces inside
+        <span class="fundamentals-bg"><code>&lt;Text&gt;</code></span>
+      </h3>
+
+      <ul class="fundamentals-list">
+        <li class="introduction-item">
+          <p class="introduction-text">
+            <span class="fundamentals-span">+ props</span>. Props is short for
+            “properties”.
+          </p>
+        </li>
+        <li class="introduction-item">
+          <p class="introduction-text">
+            <span class="fundamentals-span">+ state</span>. While you can think
+            of props as arguments you use to configure how components render,
+            state is like a component’s personal data storage. State is useful
+            for handling data that changes over time or that comes from user
+            interaction. State gives your components memory!
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="handling  container">
+      <div class="introduction-main">
+        <h2 class="introduction-titel">handling text input</h2>
+        <p class="introduction-subtitle">Chapter 4</p>
+      </div>
+      <p class="introduction-text handling-text">
+        TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
+      </p>
+
+      <p class="introduction-text">
+        For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕 🍕".
+      </p>
+
+    </section>
+  </body>
+</html>
