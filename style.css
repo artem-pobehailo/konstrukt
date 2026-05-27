@@ -52,19 +52,27 @@ a {
     color: #000;
   transition: all 0.3s ease-in-out;}
 
+
+  
+    .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background: white; 
+}
+  
   .header-container{
-    max-width: 1440px;
+     max-width: 1440px;
     width: 100%;
     display: flex;
     margin: 0 auto;
-    position: relative;
-    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0 120px;
     align-items: center;
-    margin-bottom: 70px;
-   
-    
+    height: 80px;
+ 
 }
 .header-left{
     display: flex;
@@ -114,11 +122,9 @@ a:hover {
 
 
 .container{
-    max-width: 1440px;
+    max-width: 785px;
     width: 100%;
-    margin: 0 auto;
-    padding: 0px 120px 90px 120px;
-    
+    padding-bottom: 90px;
     
 }
 .introduction-main{
@@ -137,8 +143,18 @@ line-height: 1.33333;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #000;
-
+position: relative;
 }
+.introduction-titel::before,
+.dok-titel::before{
+  content: "";
+  position: absolute;
+top: -15px;
+  width: 100px;
+height: 8px;
+background: #000;
+}
+
 .introduction-subtitle{
     font-family: "Farro", sans-serif;
 font-weight: 300;
@@ -188,9 +204,76 @@ color: #000;
     padding-bottom: 40px;
 }
 
+.all-container{
+  display: flex;
+  gap: 30px;
+  max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 155px 120px 90px 120px;
+    position: relative;
 
+}
 
+.sidbar-container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-width: 385px;
+  width: 100%;  
+  
+}
+.sidbar{
+  position: sticky;
+  top: 155px;
+}
 
+.sidbar-list{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.sidbar-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
 
+  font-family: "Francois One", sans-serif;
+font-weight: 400;
+font-size: 36px;
 
+line-height: 1.33333;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #000;
+}
 
+body::before {
+    content: "";
+    position: fixed;   
+    z-index: -1;       
+    top: 155px;         
+    
+    
+    left: 50%;          
+    margin-left: 100px; 
+   
+
+    width: 760px;       
+    height: 760px;
+    
+    background-image: url("./bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none; 
+}
+.dok-container{
+  position: relative;
+      max-width: 1440px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 120px;
+    align-items: center;
+    height: 80px;
+}
